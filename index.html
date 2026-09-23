@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Rayan VFX — freelance video editing, gaming edits, short-form content, YouTube editing and VFX.">
+<meta name="theme-color" content="#070707">
+<title>Rayan VFX — Video Editor</title>
+<style>
+:root{--bg:#070707;--card:#101010;--card2:#151515;--text:#f5f5f5;--muted:#9b9b9b;--red:#e50914;--line:#252525;--max:1160px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}.wrap{width:min(92%,var(--max));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(7,7,7,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:21px;font-weight:950;letter-spacing:-.8px}.logo span{color:var(--red)}
+nav ul{display:flex;gap:27px;list-style:none;color:#c9c9c9;font-size:14px}
+nav li a:hover{color:#fff}.menu{display:none;background:none;border:0;color:#fff;font-size:25px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #333;background:#fff;color:#080808;border-radius:9px;padding:12px 18px;font-weight:800;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px)}.btn.red{background:var(--red);border-color:var(--red);color:#fff}.btn.ghost{background:transparent;color:#fff}
+.hero{min-height:720px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:650px;height:650px;border-radius:50%;background:rgba(229,9,20,.13);filter:blur(110px);top:30px;left:50%;transform:translateX(-50%)}
+.hero>*{position:relative}.eyebrow{color:#ff5b63;font-size:12px;text-transform:uppercase;letter-spacing:3px;font-weight:900;margin-bottom:18px}
+h1{font-size:clamp(50px,8vw,94px);line-height:.96;letter-spacing:-5px;max-width:950px;margin:auto}
+h1 span{color:var(--red)}.hero p{max-width:670px;color:var(--muted);font-size:18px;margin:27px auto 32px}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+section{padding:100px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}
+.section-head h2{font-size:43px;line-height:1;letter-spacing:-2px}.section-head p{max-width:500px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,var(--card),#0b0b0b);border:1px solid var(--line);border-radius:15px;padding:28px}
+.card .num{color:var(--red);font-size:12px;font-weight:900}.card h3{font-size:22px;margin:9px 0}.card p{color:var(--muted);font-size:14px}
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.work{aspect-ratio:16/10;border:1px solid var(--line);border-radius:15px;background:radial-gradient(circle at 50% 35%,#242424,#0a0a0a 65%);display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+.work:before{content:"RAYAN VFX";font-weight:950;font-size:25px;letter-spacing:-1px;color:#333}
+.work span{position:absolute;bottom:14px;color:#666;font-size:10px;text-transform:uppercase;letter-spacing:2px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about h2{font-size:50px;line-height:1.02;letter-spacing:-2.5px}.about p{color:var(--muted);margin-top:20px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{padding:24px;background:var(--card);border:1px solid var(--line);border-radius:13px}.fact b{display:block;font-size:28px}.fact span{color:var(--muted);font-size:13px}
+.price{font-size:37px;font-weight:950;margin:20px 0 2px}.small{color:var(--muted);font-size:12px}.card .btn{margin-top:22px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact h2{font-size:50px;line-height:1.02;letter-spacing:-2.5px}.contact-copy{color:var(--muted);margin-top:18px}
+form{display:grid;gap:12px}.input{width:100%;padding:14px 15px;background:#0d0d0d;border:1px solid #292929;border-radius:9px;color:#fff;font:inherit}.input:focus{outline:1px solid var(--red);border-color:var(--red)}textarea{min-height:155px;resize:vertical}
+.notice{margin-top:18px;padding:13px 15px;border:1px solid #292929;border-radius:9px;background:#0d0d0d;color:#777;font-size:12px}
+footer{padding:34px 0;color:#707070;border-top:1px solid var(--line);font-size:12px;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){
+nav ul{display:none}.menu{display:block}nav .btn{display:none}
+nav ul.open{display:flex;position:absolute;top:72px;left:0;right:0;background:#090909;border-bottom:1px solid var(--line);padding:20px;flex-direction:column;gap:17px}
+.hero{min-height:630px}h1{letter-spacing:-3px}.grid,.portfolio,.about,.contact{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:15px}.about h2,.contact h2{font-size:42px}footer{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<nav>
+<a class="logo" href="#top">RAYAN<span>VFX</span></a>
+<ul id="navLinks">
+<li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+<button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+<a class="btn red" href="#contact">Get a quote</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<div class="eyebrow">Freelance Video Editor</div>
+<h1>Make your content <span>hit harder.</span></h1>
+<p>Professional video editing for creators, gamers and brands — from fast-paced Shorts to polished YouTube videos and advanced VFX.</p>
+<div class="actions"><a class="btn red" href="#contact">Start a project</a><a class="btn ghost" href="#work">View portfolio</a></div>
+</div>
+</section>
+
+<section id="services"><div class="wrap">
+<div class="section-head"><h2>What I do.</h2><p>Editing built around pacing, retention and a clean visual style. Every project is scoped around what you actually need.</p></div>
+<div class="grid">
+<article class="card"><div class="num">01</div><h3>Short-form</h3><p>TikTok, Reels and YouTube Shorts with tight cuts, captions, sound design and engaging pacing.</p></article>
+<article class="card"><div class="num">02</div><h3>YouTube</h3><p>Long-form creator and gaming videos with structured pacing, clean audio, graphics and retention-focused editing.</p></article>
+<article class="card"><div class="num">03</div><h3>Gaming edits</h3><p>High-energy gaming edits with impact cuts, effects, motion graphics and beat-synced moments.</p></article>
+<article class="card"><div class="num">04</div><h3>VFX</h3><p>Compositing, tracking, motion graphics and visual treatments for projects that need extra polish.</p></article>
+<article class="card"><div class="num">05</div><h3>Social packages</h3><p>Consistent batches of short-form content for creators and businesses that need regular output.</p></article>
+<article class="card"><div class="num">06</div><h3>Custom projects</h3><p>Have something different? Send the brief and the edit can be scoped around your footage and deadline.</p></article>
+</div></div></section>
+
+<section id="work"><div class="wrap">
+<div class="section-head"><h2>Selected work.</h2><p>Replace these six placeholders with your actual portfolio links or videos before sending the site to clients.</p></div>
+<div class="portfolio">
+<a class="work" href="#" data-project="Portfolio 01"><span>Replace with your work</span></a>
+<a class="work" href="#" data-project="Portfolio 02"><span>Replace with your work</span></a>
+<a class="work" href="#" data-project="Portfolio 03"><span>Replace with your work</span></a>
+<a class="work" href="#" data-project="Portfolio 04"><span>Replace with your work</span></a>
+<a class="work" href="#" data-project="Portfolio 05"><span>Replace with your work</span></a>
+<a class="work" href="#" data-project="Portfolio 06"><span>Replace with your work</span></a>
+</div></div></section>
+
+<section id="pricing"><div class="wrap">
+<div class="section-head"><h2>Starting prices.</h2><p>Simple starting points. Complex projects can be quoted individually after reviewing the footage and brief.</p></div>
+<div class="grid">
+<article class="card"><h3>Short-form edit</h3><div class="price">£40</div><div class="small">per video · starting from</div><p>Up to 60 seconds · captions · basic effects · 1 revision</p><a class="btn red" href="#contact" onclick="setProject('Short-form edit')">Request this</a></article>
+<article class="card"><h3>YouTube edit</h3><div class="price">£100</div><div class="small">per video · starting from</div><p>Up to 10 minutes · pacing · audio · graphics · 1 revision</p><a class="btn red" href="#contact" onclick="setProject('YouTube edit')">Request this</a></article>
+<article class="card"><h3>Advanced VFX</h3><div class="price">£150</div><div class="small">per project · starting from</div><p>VFX, compositing and motion graphics. Final quote depends on complexity.</p><a class="btn red" href="#contact" onclick="setProject('Advanced VFX')">Request this</a></article>
+</div></div></section>
+
+<section id="about"><div class="wrap about">
+<div><div class="eyebrow">About Rayan VFX</div><h2>Editing with purpose, not just effects.</h2><p>I create clean, energetic edits designed around the platform, audience and goal of each project. Whether you need a punchy Short, a polished YouTube upload or a more advanced VFX sequence, the workflow starts with the story and finishes with the details.</p></div>
+<div class="facts"><div class="fact"><b>01</b><span>Creative workflow</span></div><div class="fact"><b>02</b><span>Creator-focused</span></div><div class="fact"><b>03</b><span>Clear communication</span></div><div class="fact"><b>04</b><span>Professional delivery</span></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<div><div class="eyebrow">Let's work together</div><h2>Have a project in mind?</h2><p class="contact-copy">Send the details below. Your email app will open with the enquiry already prepared.</p><div class="notice">Before publishing, replace <b>YOUR-EMAIL@example.com</b> in this file with your real business email.</div></div>
+<form onsubmit="sendMail(event)">
+<input class="input" id="name" required placeholder="Your name">
+<input class="input" id="email" type="email" required placeholder="Your email">
+<input class="input" id="project" required placeholder="What do you need edited?">
+<textarea class="input" id="message" required placeholder="Tell me about the footage, style, length and deadline..."></textarea>
+<button class="btn red" type="submit">Send enquiry</button>
+</form>
+</div></section>
+</main>
+
+<footer><div>© <span id="year"></span> Rayan VFX. All rights reserved.</div><div>Video Editing · VFX · Post Production</div></footer>
+
+<script>
+const BUSINESS_EMAIL="YOUR-EMAIL@example.com";
+document.getElementById("year").textContent=new Date().getFullYear();
+function toggleMenu(){document.getElementById("navLinks").classList.toggle("open")}
+document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("open")));
+function setProject(name){setTimeout(()=>document.getElementById("project").value=name,50)}
+function sendMail(e){
+e.preventDefault();
+const subject=encodeURIComponent("Rayan VFX project enquiry — "+document.getElementById("project").value);
+const body=encodeURIComponent("Name: "+document.getElementById("name").value+"\nEmail: "+document.getElementById("email").value+"\n\nProject details:\n"+document.getElementById("message").value);
+window.location.href="mailto:"+BUSINESS_EMAIL+"?subject="+subject+"&body="+body;
+}
+document.querySelectorAll(".work").forEach((card,i)=>{
+card.addEventListener("click",e=>{
+e.preventDefault();
+alert("Portfolio slot "+(i+1)+" is ready for your YouTube, TikTok, Drive or other project link. Replace its href in index.html.");
+});
+});
+</script>
+</body>
+</html>
